@@ -1,9 +1,9 @@
 function GCD(context) {
     var example_name = "GCD"
-    var a = 23432423489238738742893789437363934923837465672723;
-    var b = 11111111111111111111111111111163811772030917980576;
-    var ret = fun(a, b);
-    context.printString(example_name + "(" + a + ", " + b + ") = " + ret);
+    var first = 234324234;
+    var second = 111111111;
+    var ret = fun(first, second);
+    context.printString(example_name + "(" + first + ", " + second + ") = " + ret);
 
     function fun(a, b) {
         return b ? fun(b, a%b) : Math.abs(a);

@@ -1,22 +1,22 @@
 function Trees(context) {
     var example_name = "Tree union";
-    var n = 100;
+    var num = 30;
     var ret = fun();
     context.printString(example_name + ": " + ret);
 
     function buildTree(i){
-        if(i > n || i < -n){
-            return Empty();
+        if(i <= num){
+            var l = i+1;
+            return addNumber(buildTree(l), i);
         }
         else{
-            var l = i > 0 ? i+1 : i-1;
-            return addNumber(buildTree(l), i);
+            return Empty();
         }
     }
 
     function fun() {
-        var t1 = buildTree(0);
-        var t2 = buildTree(10);
+        var t1 = addNumber(buildTree(0), 5);
+        var t2 = addNumber(buildTree(1), 4);
         return printTree(union(t1,t2));
     }
 

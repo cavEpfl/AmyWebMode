@@ -1,11 +1,11 @@
 function Lists(context) {
     var example_name = "Lists";
-    var n = 1000;
+    var num = 1000;
     var ret = fun();
-    context.printString(example_name + ", (size=" + n +"): " + ret);
+    context.printString(example_name + ", (size=" + num +"): " + ret);
 
     function buildList(i){
-        if(i == n){
+        if(i == num){
             return Nil();
         }
         else{

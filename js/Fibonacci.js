@@ -1,14 +1,14 @@
 function Fibonacci(context) {
-    var example_name = "Fibonacci"
-    var n = 40;
-    var ret = fun(n);
-    context.printString(example_name + "(" + n + ") = " + ret);
+    var example_name = "Fibonacci";
+    var num = 40;
+    var ret = fibonacci(num-1);
+    context.printString(example_name + "(" + num + ") = " + ret);
 
-    function fun(n) {
-        if(n == 0 || n == 1) {
+    function fibonacci(n) {
+        if (n < 2){
             return 1;
-        } else {
-            return fun(n-1) + fun(n-2);
+        }else{
+            return fibonacci(n-2) + fibonacci(n-1);
         }
     }
 }

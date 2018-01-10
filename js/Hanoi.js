@@ -1,8 +1,8 @@
 function Hanoi(context) {
     var example_name = "Hanoi"
-    var n = 1000;
-    var ret = fun(n);
-    context.printString(example_name + "(" + n + ") = " + ret);
+    var num = 1000;
+    var ret = fun(num);
+    context.printString(example_name + "(" + num + ") = " + ret);
 
     function fun(n) {
         if (n < 1) {
