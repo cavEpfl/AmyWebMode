@@ -1,6 +1,6 @@
 function Factorial(context) {
     var example_name = "Factorial"
-    var num = 30;
+    var num = 12;
     var ret = fun(num);
     context.printString(example_name + "(" + num + ") = " + ret);
 
